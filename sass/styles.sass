@@ -1,0 +1,133 @@
+@import "config"
+
+*
+    box-sizing: border-box
+
+body 
+    font-family: $primary-font
+    margin: 0
+    padding: 0
+
+// nesting
+.container
+    position: relative
+
+    .navbar
+        display: flex
+        position: absolute
+        top: 0
+        width: 100%
+        padding: 1rem
+        justify-content: space-between
+        
+    .logo
+        padding-left: 3rem
+
+    .burger
+        display: none
+
+    ul 
+        display: flex
+        list-style-type: none
+        
+    li 
+        padding: 2rem
+    	
+    a
+        text-decoration: none
+        @include text
+        font-weight: bold 
+        color: #000
+        
+
+    a:hover 
+        color: $accent-color
+
+    .hero
+            
+        
+        &-circle
+            position: absolute
+            width: 460px
+            height: 450px
+            border-radius: 50%
+            top: 25%
+            left: 20%
+            background-color: $hero-text-color
+            
+
+    h1 
+        @include h1
+        padding-left: 4rem
+        padding-top: 5rem
+        text-shadow:  2px 3px 6px #818181
+       
+
+        
+    img 
+        width: 100%
+        
+       
+        
+
+
+.about-section
+    
+    .about-circle
+        width: 350px
+        height: 340px
+        border-radius: 50%
+        background-color: $accent-color
+        @include h2 // mixin
+
+    h2 
+        padding-left: 1.2rem
+        padding-top: 9rem
+       
+
+    .about-p-circle
+        width: 500px
+        height: 480px
+        border-radius: 50%
+        background-color: $about-text-color
+        @include text // mixin
+        box-shadow: 0 4px 4px 0 #818181
+
+    p 
+        padding: 5.5rem 3rem 0 5rem
+       
+
+
+
+.brunch
+
+    .brunch-circle
+        width: 350px
+        height: 340px
+        border-radius: 50%
+        background-color: $brunch-color
+        @include h2 // mixin
+
+    h2 
+        text-align: center
+        padding-top: 9rem
+
+    .brunch-p-circle
+        width: 350px
+        height: 340px
+        border-radius: 50%
+        background-color: $accent-color
+        @include text // mixin
+
+    p 
+        margin-right: 10rem
+
+    &-banner
+        display: none
+
+
+
+
+
+@import "mobile"
+

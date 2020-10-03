@@ -1,0 +1,244 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .logo {
+  padding-left: 3rem;
+}
+
+.container .burger {
+  display: none;
+}
+
+.container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.container li {
+  padding: 2rem;
+}
+
+.container a {
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-weight: regular;
+  font-size: 1.5rem;
+  line-height: 120%;
+  font-weight: bold;
+  color: #000;
+}
+
+.container a:hover {
+  color: #FDA704;
+}
+
+.container .hero-circle {
+  position: absolute;
+  width: 460px;
+  height: 450px;
+  border-radius: 50%;
+  top: 25%;
+  left: 20%;
+  background-color: #FFFAF8;
+}
+
+.container h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: black;
+  font-size: 3rem;
+  line-height: 154.5%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-left: 4rem;
+  padding-top: 5rem;
+  text-shadow: 2px 3px 6px #818181;
+}
+
+.container img {
+  width: 100%;
+}
+
+.about-section .about-circle {
+  width: 350px;
+  height: 340px;
+  border-radius: 50%;
+  background-color: #FDA704;
+  font-family: "Poppins", sans-serif;
+  font-weight: semibold;
+  font-size: 3rem;
+  line-height: 101.5%;
+  text-transform: uppercase;
+}
+
+.about-section h2 {
+  padding-left: 1.2rem;
+  padding-top: 9rem;
+}
+
+.about-section .about-p-circle {
+  width: 500px;
+  height: 480px;
+  border-radius: 50%;
+  background-color: #FDE6EA;
+  font-family: "Playfair Display", serif;
+  font-weight: regular;
+  font-size: 1.5rem;
+  line-height: 120%;
+  -webkit-box-shadow: 0 4px 4px 0 #818181;
+          box-shadow: 0 4px 4px 0 #818181;
+}
+
+.about-section p {
+  padding: 5.5rem 3rem 0 5rem;
+}
+
+.brunch .brunch-circle {
+  width: 350px;
+  height: 340px;
+  border-radius: 50%;
+  background-color: #FBD6E3;
+  font-family: "Poppins", sans-serif;
+  font-weight: semibold;
+  font-size: 3rem;
+  line-height: 101.5%;
+  text-transform: uppercase;
+}
+
+.brunch h2 {
+  text-align: center;
+  padding-top: 9rem;
+}
+
+.brunch .brunch-p-circle {
+  width: 350px;
+  height: 340px;
+  border-radius: 50%;
+  background-color: #FDA704;
+  font-family: "Playfair Display", serif;
+  font-weight: regular;
+  font-size: 1.5rem;
+  line-height: 120%;
+}
+
+.brunch p {
+  margin-right: 10rem;
+}
+
+.brunch-banner {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .container {
+    height: 400px;
+  }
+  .container .navbar {
+    padding: 0;
+  }
+  .container .logo {
+    margin: 1rem;
+    padding: 0;
+  }
+  .container .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+  }
+  .container ul {
+    display: none;
+  }
+  .container .hero-circle {
+    background: radial-gradient(50% 50% at 50% 50%, #EFF0F2, #EFF0F204);
+    padding: 0;
+    width: 100%;
+    top: 12rem;
+    left: 3;
+  }
+  .container .hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .container .hero img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 26% 0;
+       object-position: 26% 0;
+    height: 740px;
+    width: 100%;
+    overflow-y: hidden;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .about-section .about-p-circle {
+    width: 280px;
+    height: 270px;
+  }
+  main .about-section p {
+    width: 327px;
+    padding: 0;
+    margin: 0 3rem;
+  }
+  main .about-section .second-about-p-circle {
+    width: 280px;
+    height: 270px;
+    border-radius: 50%;
+    background-color: #FDE6EA;
+    -webkit-box-shadow: 0 4px 4px 0 #818181;
+            box-shadow: 0 4px 4px 0 #818181;
+  }
+  main .about-section img {
+    display: none;
+  }
+  main .brunch .brunch-img {
+    display: none;
+  }
+  main .brunch .brunch-img-2 {
+    display: none;
+  }
+  main .brunch-banner {
+    display: inline;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
