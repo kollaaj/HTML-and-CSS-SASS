@@ -1,3 +1,4 @@
+// linking _config.sass to main stylesheet
 @import "config"
 
 *
@@ -8,7 +9,7 @@ body
     margin: 0
     padding: 0
 
-// nesting
+// the first nesting (many more to come)
 .container
     position: relative
 
@@ -19,7 +20,6 @@ body
         width: 100%
         padding: 1rem
         justify-content: space-between
-        
         
         
     .logo
@@ -41,10 +41,9 @@ body
     	
     a
         text-decoration: none
-        @include text
-        font-weight: bold 
+        font-weight: bold
         color: #000
-        
+        @include text
 
     a:hover 
         color: $accent-color
@@ -62,23 +61,16 @@ body
             
 
     h1 
-        @include h1
         padding-left: 4rem
         padding-top: 5rem
-        text-shadow:  2px 3px 6px #818181
-
-       
+        text-shadow: 2px 3px 6px #818181
+        @include h1
 
         
     img 
         width: 100%
         
-       
         
-main
-    
-    
-    
 
 .about-section
     display: flex
@@ -106,21 +98,18 @@ main
         height: 480px
         border-radius: 50%
         background-color: $about-text-color
-        @include text // mixin
         box-shadow: 0 4px 4px 0 #818181
         overflow-y: hidden
         z-index: 1
-       
+        @include text // mixin
     p 
         padding: 4rem 3rem 0 5rem
         
     img 
-      display: block
-      margin-top: 2rem
-      margin-bottom: 15rem
-      
-
-
+        display: block
+        margin-top: 2rem
+        margin-bottom: 15rem
+    
 
 .brunch
     display: flex
@@ -151,13 +140,12 @@ main
         margin: 1rem
         margin-bottom: 6rem
             
-
     p 
         display: block
         margin-top: 22rem
         max-width: 20rem
-        @include text // mixin 
         z-index: 1
+        @include text // mixin 
 
     &-p-circle
         display: block
@@ -185,7 +173,6 @@ footer
         display: inline-grid
         grid-template-columns: auto auto
 
-
     .item 
         margin-left: 2rem
         margin-top: 0.5rem
@@ -204,6 +191,6 @@ footer
 
 
 
-
+// linking _mobile.sass to main stylesheet
 @import "mobile"
 

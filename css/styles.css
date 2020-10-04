@@ -48,12 +48,12 @@ body {
 
 .container a {
   text-decoration: none;
+  font-weight: bold;
+  color: #000;
   font-family: "Playfair Display", serif;
   font-weight: regular;
   font-size: 1.5rem;
   line-height: 120%;
-  font-weight: bold;
-  color: #000;
 }
 
 .container a:hover {
@@ -71,15 +71,15 @@ body {
 }
 
 .container h1 {
+  padding-left: 4rem;
+  padding-top: 5rem;
+  text-shadow: 2px 3px 6px #818181;
   font-family: "Playfair Display", serif;
   font-weight: black;
   font-size: 3rem;
   line-height: 154.5%;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding-left: 4rem;
-  padding-top: 5rem;
-  text-shadow: 2px 3px 6px #818181;
 }
 
 .container img {
@@ -121,14 +121,14 @@ body {
   height: 480px;
   border-radius: 50%;
   background-color: #FDE6EA;
-  font-family: "Playfair Display", serif;
-  font-weight: regular;
-  font-size: 1.5rem;
-  line-height: 120%;
   -webkit-box-shadow: 0 4px 4px 0 #818181;
           box-shadow: 0 4px 4px 0 #818181;
   overflow-y: hidden;
   z-index: 1;
+  font-family: "Playfair Display", serif;
+  font-weight: regular;
+  font-size: 1.5rem;
+  line-height: 120%;
 }
 
 .about-section p {
@@ -190,11 +190,11 @@ body {
   display: block;
   margin-top: 22rem;
   max-width: 20rem;
+  z-index: 1;
   font-family: "Playfair Display", serif;
   font-weight: regular;
   font-size: 1.5rem;
   line-height: 120%;
-  z-index: 1;
 }
 
 .brunch-p-circle {
