@@ -1,14 +1,14 @@
-@media (max-width: 700px)
-    body 
-        
+@media (max-width: 900px)
 
     .container
         height: 400px
+        width: 100%
 
         .navbar 
             padding: 0
 
         .logo
+            background: radial-gradient(50% 50% at 50% 50%, #EFF0F2, #EFF0F204)
             margin: 1rem
             padding: 0
 
@@ -19,54 +19,70 @@
             display: none
 
         .hero 
+            
 
             &-circle
                 background: radial-gradient(50% 50% at 50% 50%, #EFF0F2, #EFF0F204)
-                padding: 0
+                position: absolute
+                padding: 8rem
                 width: 100%
                 top: 12rem
-                left: 3
+                left: 1rem
 
             h1 
+                position: relative
                 font-size: 40px
                 font-weight: bold
-            
+                bottom: 15rem
+                right:
+                left: -7rem
+                
+            // adjusting alignment of image with object position 
             img 
+                
                 object-fit: cover
                 object-position: 26% 0
+                width: 110%
                 height: 740px
-                width: 100%
-               
                 overflow-y: hidden
             
-               
-                
-                
             
-
     main 
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
+        overflow: hidden
         
         .about-section
+            flex-direction: column
+            justify-content: center
+            
+            .about-circle
+                margin-top: 30rem
+                left: 3rem
+                
+
+            h2 
+                margin: 1rem
+            
             .about-p-circle
-                width: 280px
-                height: 270px
+                margin-top: 5rem
+                width: 380px
+                height: 370px
+                overflow: visible
                 
 
             p 
                 width: 327px
                 padding: 0
-                margin: 0 3rem
+                margin: 5rem 0 0 15rem
                     
             .second-about-p-circle
+                margin: -8rem 2rem 0 12rem
                 width: 280px
                 height: 270px
                 border-radius: 50%
                 background-color: $about-text-color
                 box-shadow: 0 4px 4px 0 #818181
+                overflow: hidden
+
             
             img 
                 display: none
@@ -74,22 +90,52 @@
 
 
         .brunch
+            display: flex
+            flex-direction: column
+            justify-content: center
 
-            .brunch-img
+            &-container
+                margin: 1rem
+
+            &-img 
                 display: none
 
-            .brunch-img-2
+        
+            &-container-2 
+                
+
+            p 
+                display: block
+                margin-top: 0
+
+            &-p-circle
+                display: none
+
+
+            &-img-2
                 display: none
 
             &-banner
-                display: inline
-                width: 100%
-                height: 
-            
+                display: block
+                object-fit: cover
+                width: 120%
+                height: 40rem
             
 
-    
+    footer 
+        display: block
 
+        .footer-container
+            display: block
+
+        .item
+            margin-left: 1rem
+
+        ul 
+           justify-content: space-between
+           width: 100%
+        li 
+            
     
 
         
